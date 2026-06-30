@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
   <title id="title">Архитектура агента поиска научных статей</title>
-  <desc id="desc">Схема показывает путь от научного запроса к поиску в базах, проверке через Firecrawl MCP и итоговому отчёту.</desc>
+  <desc id="desc">Схема показывает путь от научного запроса к поиску в базах, проверке через Firecrawl MCP, навыкам Firecrawl и итоговому отчёту.</desc>
   <rect width="1200" height="720" fill="#f7f9fc"/>
   <style>
     .title { font: 700 34px Arial, sans-serif; fill: #172033; }
@@ -19,7 +19,7 @@
     </marker>
   </defs>
   <text x="60" y="60" class="title">Агент поиска научных статей по ЭМС</text>
-  <text x="60" y="92" class="body">Промпт + Firecrawl MCP + научные базы + проверяемый русский отчёт</text>
+  <text x="60" y="92" class="body">Промпт + Firecrawl MCP/CLI + научные базы + проверяемый русский отчёт</text>
 
   <rect x="60" y="150" width="220" height="120" class="accent"/>
   <text x="90" y="190" class="label">Научный запрос</text>
@@ -39,11 +39,12 @@
   <text x="770" y="224" class="body">arXiv.org</text>
   <text x="770" y="252" class="body">eLIBRARY</text>
   <text x="770" y="288" class="small">открытые страницы через Firecrawl MCP</text>
+  <text x="770" y="312" class="small">Навыки: search, scrape, map, crawl, parse</text>
 
   <rect x="160" y="390" width="260" height="150" class="box"/>
   <text x="195" y="432" class="label">Извлечение</text>
-  <text x="195" y="466" class="body">название, авторы, год,</text>
-  <text x="195" y="490" class="body">DOI, ссылка, аннотация,</text>
+  <text x="195" y="466" class="body">страницы, DOI, аннотации,</text>
+  <text x="195" y="490" class="body">связанные статьи,</text>
   <text x="195" y="514" class="body">доступность текста</text>
 
   <rect x="500" y="390" width="260" height="150" class="box"/>
@@ -64,4 +65,3 @@
   <path d="M420 465 H500" class="arrow"/>
   <path d="M760 465 H840" class="arrow"/>
 </svg>
-
