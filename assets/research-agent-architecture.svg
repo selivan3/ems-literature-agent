@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Архитектура агента поиска научных статей</title>
+  <desc id="desc">Схема показывает путь от научного запроса к поиску в базах, проверке через Firecrawl MCP и итоговому отчёту.</desc>
+  <rect width="1200" height="720" fill="#f7f9fc"/>
+  <style>
+    .title { font: 700 34px Arial, sans-serif; fill: #172033; }
+    .label { font: 700 20px Arial, sans-serif; fill: #172033; }
+    .body { font: 16px Arial, sans-serif; fill: #384255; }
+    .small { font: 14px Arial, sans-serif; fill: #566174; }
+    .box { fill: #ffffff; stroke: #c9d4e5; stroke-width: 2; rx: 12; }
+    .accent { fill: #eaf2ff; stroke: #5b7cfa; stroke-width: 2; rx: 12; }
+    .green { fill: #e8f7ef; stroke: #2aa66a; stroke-width: 2; rx: 12; }
+    .orange { fill: #fff3e2; stroke: #e5962f; stroke-width: 2; rx: 12; }
+    .arrow { stroke: #66748a; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#66748a"/>
+    </marker>
+  </defs>
+  <text x="60" y="60" class="title">Агент поиска научных статей по ЭМС</text>
+  <text x="60" y="92" class="body">Промпт + Firecrawl MCP + научные базы + проверяемый русский отчёт</text>
+
+  <rect x="60" y="150" width="220" height="120" class="accent"/>
+  <text x="90" y="190" class="label">Научный запрос</text>
+  <text x="90" y="222" class="body">диссоциация /</text>
+  <text x="90" y="246" class="body">рекомбинация воды</text>
+
+  <rect x="370" y="120" width="260" height="180" class="box"/>
+  <text x="405" y="160" class="label">План поиска</text>
+  <text x="405" y="194" class="body">русские и английские</text>
+  <text x="405" y="218" class="body">формулы запроса</text>
+  <text x="405" y="252" class="small">контроль дублей и DOI</text>
+
+  <rect x="730" y="90" width="360" height="240" class="orange"/>
+  <text x="770" y="132" class="label">Источники</text>
+  <text x="770" y="168" class="body">Scopus</text>
+  <text x="770" y="196" class="body">Web of Science</text>
+  <text x="770" y="224" class="body">arXiv.org</text>
+  <text x="770" y="252" class="body">eLIBRARY</text>
+  <text x="770" y="288" class="small">открытые страницы через Firecrawl MCP</text>
+
+  <rect x="160" y="390" width="260" height="150" class="box"/>
+  <text x="195" y="432" class="label">Извлечение</text>
+  <text x="195" y="466" class="body">название, авторы, год,</text>
+  <text x="195" y="490" class="body">DOI, ссылка, аннотация,</text>
+  <text x="195" y="514" class="body">доступность текста</text>
+
+  <rect x="500" y="390" width="260" height="150" class="box"/>
+  <text x="535" y="432" class="label">Анализ</text>
+  <text x="535" y="466" class="body">перевод, резюме, тип</text>
+  <text x="535" y="490" class="body">работы, релевантность,</text>
+  <text x="535" y="514" class="body">ограничения</text>
+
+  <rect x="840" y="390" width="260" height="150" class="green"/>
+  <text x="875" y="432" class="label">Итог</text>
+  <text x="875" y="466" class="body">таблица статей, отчёт,</text>
+  <text x="875" y="490" class="body">список для чтения,</text>
+  <text x="875" y="514" class="body">пробелы в литературе</text>
+
+  <path d="M280 210 H370" class="arrow"/>
+  <path d="M630 210 H730" class="arrow"/>
+  <path d="M910 330 C900 360 330 350 290 390" class="arrow"/>
+  <path d="M420 465 H500" class="arrow"/>
+  <path d="M760 465 H840" class="arrow"/>
+</svg>
+
